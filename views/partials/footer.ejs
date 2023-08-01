@@ -1,0 +1,17 @@
+<div>
+    <% content.forEach(country => { %>
+        <h2><%= country.name %></h2>
+    <% }) %>
+</div>
+
+<% if (countriesData.length === 0) { %>
+    <h1>Oops</h1>
+    <p>no countries found</p>
+<% } else {%>
+    <% countriesData.forEach(country => { %>
+        <div class="country">
+            <h2> <%= country.name %> </h2>
+            <img src="<%= country.flags.png %>" alt="img">
+        </div>
+<% }) %>
+<% } %>

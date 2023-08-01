@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/header.ejs') %>
+<body>
+    <main>
+        <header>
+            <nav>
+                <h3 class="title">where in the world??</h3>
+                <div class="theme">
+                    <span class="red"><ion-icon name="moon-outline"></ion-icon></span>
+                    <span>dark mode</span>
+                </div>
+            </nav>
+        </header>
+        <section>
+            <div class="search">
+                <form action="">
+                    <!-- <label for="">icon</label> -->
+                    <span><i class="fa fa-search" aria-hidden="true"></i></span>
+                    <input name="countryInput" type="text" id="text" placeholder="search for a country...">
+                </form>
+                <div name="region" id="region" class="region">
+                    <div class="p"> <p>Filter by Region</p> <span><i class="fa fa-caret-down" aria-hidden="true"></i></span></div>
+                    <ul class="filter-options">
+                        <!-- <li class="africa">Africa</li>
+                        <li class="america">America</li>
+                        <li class="asia">Asia</li>
+                        <li class="europe">Europe</li>
+                        <li class="oceania">Oceania</li> -->
+                    </ul>
+
+                </div>
+            </div>
+            <div id="renderedData"></div>
+            <div class="countries">
+        
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>

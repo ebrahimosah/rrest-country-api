@@ -1,0 +1,14 @@
+const express = require('express');
+const { getCountries } = require('../controllers/restApiController');
+
+const router = express.Router();
+
+
+router.get('/', getCountries)
+
+
+
+
+
+
+module.exports = router;
